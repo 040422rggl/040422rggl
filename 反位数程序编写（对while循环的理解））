@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a,b,c=0;
+	printf("请输入一个正整数：\n");
+	scanf("%d",&a);
+	if(a<=0)
+	{
+		printf("数据输入错误！\n");
+		exit (0);
+	}
+	while(a!=0)
+	{
+		b=a%10;
+	    c=c*10+b;
+	    a=a/10;
+    }
+	printf("这个数的反位数为：%d\n",c);
+	return 0;
+}
